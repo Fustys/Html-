@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Студенческий портал — лабораторная работа 2</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ШАПКА -->
+    <header id="page-header">
+        <div class="container header-inner">
+
+            <img id="logo" src="logo.png" alt="Логотип студенческого портала" width="100" height="100" />
+
+            <!-- МЕНЮ -->
+            <nav id="main-nav">
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="menu-link" href="index.html">Главная</a></li>
+                    <li class="menu-item"><a class="menu-link" href="about/test2.html">Команда</a></li>
+                    <li class="menu-item"><a class="menu-link" href="test1.html">Спорт</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#contact-form">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <p id="site-name">Студенческий портал</p>
+
+        </div>
+    </header>
+
+    <main class="container" id="content">
+
+        <h1>Лабораторная работа&nbsp;2</h1>
+
+        <section class="block" id="links-block">
+            <h2>Список гиперссылок</h2>
+
+            <ul class="links-list">
+                <li><a href="http://www.kubsu.ru/index.php">Перейти на сайт КубГУ по http</a></li>
+                <li><a href="https://www.kubsu.ru/index.php">Перейти на сайт КубГУ по https</a></li>
+                <li>
+                    Картинка:<br />
+                    <img class="photo" src="image.jpg" alt="Цветок" width="200" height="150" />
+                </li>
+                <li><a href="about/">Сокращённая ссылка на каталог</a></li>
+                <li><a href="https://www.kubsu.ru/index.php">На главную страницу</a></li>
+                <li id="Front">Фрагмент страницы, на который ведёт якорь</li>
+                <li><a href="#Front">Перейти к фрагменту этой страницы</a></li>
+                <li><a href="https://www.google.com/search?q=КубГУ&amp;hl=ru&amp;num=10">Ссылка с тремя параметрами в URL</a></li>
+                <li><a href="https://lk.kubsu.ru/Plans/Plan.aspx?id=3069">Ссылка с параметром id</a></li>
+                <li><a href="test1.html">Относительная ссылка на страницу</a></li>
+                <li><a href="about/test2.html">Относительная ссылка на страницу в подкаталоге</a></li>
+                <li><a href="../div.html">Относительная ссылка на страницу уровнем выше</a></li>
+                <li><a href="../../test4.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+                <li>
+                    Подробнее о поступлении можно узнать на
+                    <a href="https://kubsu.ru/ru/abiturient/contacts">странице для абитуриентов</a> сайта университета.
+                </li>
+                <li><a href="https://ru.wikipedia.org/wiki/HTML#История">Ссылка на фрагмент стороннего сайта</a></li>
+                <li>
+                    Карта ссылок на изображении:<br />
+                    <img class="photo" src="test5.svg" usemap="#imgmap" alt="Карта ссылок" width="300" height="150" />
+                    <map name="imgmap">
+                        <area shape="rect" coords="0,0,150,150" href="https://kubsu.ru/ru/abiturient" alt="Абитуриентам" title="Абитуриентам" />
+                        <area shape="circle" coords="225,75,70" href="https://kubsu.ru/contacts" alt="Контакты" title="Контакты" />
+                    </map>
+                </li>
+                <li><a href="">Ссылка с пустым href</a></li>
+                <li><a href="https://kubsu.ru/" rel="nofollow">Ссылка с запретом на переход</a></li>
+                <li>
+                    Нумерованный список ссылок:
+                    <ol class="links-list">
+                        <li><a href="https://kubsu.ru/" title="Главная страница университета">КубГУ</a></li>
+                        <li><a href="https://kubsu.ru/ru/abiturient" title="Абитуриентам">Абитуриентам</a></li>
+                        <li><a href="https://kubsu.ru/contacts" title="Контактная информация">Контакты</a></li>
+                    </ol>
+                </li>
+                <li><a href="ftp://ftp.kubsu.ru/docs/lecture1.pdf">Ссылка на файл по FTP</a></li>
+            </ul>
+        </section>
+
+
+        <section class="block" id="table-block">
+            <h2>Таблица</h2>
+
+            <table id="data-table">
+                <thead>
+                    <tr class="head-row">
+                        <th scope="col">Колонка 1</th>
+                        <th scope="col">Колонка 2</th>
+                        <th scope="col">Колонка 3</th>
+                        <th scope="col">Колонка 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="merged-cell" colspan="4">Ячейка 11, объединённая с 12, 13 и 14</td>
+                    </tr>
+                    <tr>
+                        <td class="merged-cell" rowspan="2">Ячейка 21, объединённая с 31</td>
+                        <td>Ячейка 22</td>
+                        <td>Ячейка 23</td>
+                        <td>Ячейка 24</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 32</td>
+                        <td>Ячейка 33</td>
+                        <td>Ячейка 34</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 41</td>
+                        <td class="merged-cell" colspan="2">Ячейка 42, объединённая с 43</td>
+                        <td>Ячейка 44</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 51</td>
+                        <td>Ячейка 52</td>
+                        <td>Ячейка 53</td>
+                        <td>Ячейка 54</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 61</td>
+                        <td>Ячейка 62</td>
+                        <td>Ячейка 63</td>
+                        <td>Ячейка 64</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="block" id="form-block">
+            <h2>Анкета студента</h2>
+
+            <p class="form-note">Поля, отмеченные <span class="required-mark">*</span>, обязательны для заполнения.</p>
+
+            <form id="contact-form" action="#" method="post">
+
+                <p>
+                    <label class="field-label" for="fio">ФИО <span class="required-mark">*</span></label><br />
+                    <input class="field" type="text" id="fio" name="fio"
+                        placeholder="Иванов Иван Иванович"
+                        pattern="[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?( [А-ЯЁ][а-яё]+){1,2}"
+                        title="Фамилия, имя и отчество кириллицей с заглавных букв, например: Иванов Иван Иванович"
+                        minlength="5" maxlength="80" autocomplete="name" required="required" />
+                    <span class="hint">Кириллица, каждое слово с заглавной буквы</span>
+                </p>
+
+                <p>
+                    <label class="field-label" for="phone">Телефон <span class="required-mark">*</span></label><br />
+                    <input class="field" type="tel" id="phone" name="phone"
+                        placeholder="+7 999 123-45-67"
+                        pattern="\+7 \[0-9]{3}\ [0-9]{3}-[0-9]{2}-[0-9]{2}"
+                        title="Введите номер строго в формате +7 999 123-45-67"
+                        autocomplete="tel" required="required" />
+                    <span class="hint">Формат: +7 999 123-45-67</span>
+                </p>
+
+                <p>
+                    <label class="field-label" for="email">E-mail <span class="required-mark">*</span></label><br />
+                    <input class="field" type="email" id="email" name="email"
+                        placeholder="student@mail.ru"
+                        pattern="[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}"
+                        title="Адрес должен содержать символ @ и домен, например student@mail.ru"
+                        maxlength="60" autocomplete="email" required="required" />
+                    <span class="hint">Например: student@mail.ru</span>
+                </p>
+
+                <p>
+                    <label class="field-label" for="birthdate">Дата рождения <span class="required-mark">*</span></label><br />
+                    <input class="field" type="date" id="birthdate" name="birthdate"
+                        min="2000-01-01" max="2008-12-31"
+                        title="Дата рождения в промежутке с 2000 по 2008 год"
+                        autocomplete="bday" required="required" />
+                    <span class="hint">Не раньше 2000 и не позже 2008 года</span>
+                </p>
+
+                <fieldset class="field-group">
+                    <legend>Пол <span class="required-mark">*</span></legend>
+                    <label><input type="radio" name="gender" value="male" required="required" /> Мужской</label>
+                    <label><input type="radio" name="gender" value="female" required="required" /> Женский</label>
+                </fieldset>
+
+                <p>
+                    <label class="field-label" for="lang">Любимый язык программирования <span class="required-mark">*</span></label><br />
+                    <select class="field" id="lang" name="lang[]" multiple="multiple" size="8" required="required">
+                        <option value="pascal">Pascal</option>
+                        <option value="c">C</option>
+                        <option value="cpp">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="haskell">Haskell</option>
+                        <option value="clojure">Clojure</option>
+                        <option value="prolog">Prolog</option>
+                        <option value="scala">Scala</option>
+                    </select>
+                    <span class="hint">Выберите хотя бы один пункт</span>
+                </p>
+
+                <p>
+                    <label class="field-label" for="bio">Биография</label><br />
+                    <textarea class="field" id="bio" name="bio" rows="5" cols="40"
+                        placeholder="Коротко расскажите о себе"
+                        minlength="10" maxlength="500"></textarea>
+                    <span class="hint">От 10 до 500 символов, поле необязательное</span>
+                </p>
+
+                <p>
+                    <label><input type="checkbox" name="agree" value="yes" required="required" /> С контрактом ознакомлен(а) <span class="required-mark">*</span></label>
+                </p>
+
+                <p>
+                    <button class="submit-button" type="submit">Сохранить</button>
+                    <button class="reset-button" type="reset">Очистить</button>
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="page-footer">
+        <div class="container">
+            <p class="copyright">(с) Студенческий портал, 2026</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
