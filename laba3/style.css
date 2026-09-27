@@ -203,7 +203,7 @@ a:hover {
 }
 
 .field:user-invalid,
-.field:not(:placeholder-shown):invalid {
+.field[placeholder]:not(:placeholder-shown):invalid {
     border-color: #c0392b;
     background-color: #fdf2f1;
 }
