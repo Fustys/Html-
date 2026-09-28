@@ -1,2 +1,2 @@
-- [Лабораторная 2](https://fustys.github.io/Html-/laba2/index.htm)
+- [Лабораторная 2](https://fustys.github.io/Html-/laba2/index.html)
 - [Лабораторная 3](https://fustys.github.io/Html-/laba3/index.html)
