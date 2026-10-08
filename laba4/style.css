@@ -1,0 +1,152 @@
+/* Отступы (margin/padding) задаются только классами Bootstrap в разметке.
+   Здесь — цвета, рамки, размеры. Базовые правила для смартфона,
+   расширения для больших экранов — в медиазапросе в конце (Mobile First). */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #222222;
+    background-color: #f2f4f7;
+}
+
+a {
+    color: #2a5d9f;
+}
+
+a:hover {
+    color: #14395f;
+}
+
+/* ---------- Шапка ---------- */
+
+#page-header {
+    color: #ffffff;
+    background-color: #930493;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+#site-name {
+    font-size: 20px;
+}
+
+.menu-link {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #4abba4;
+    background-color: #ffffff;
+}
+
+/* ---------- Блоки контента ---------- */
+
+.block {
+    background-color: #ffffff;
+    border: 1px solid #d5dbe3;
+    border-radius: 4px;
+}
+
+.block h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #4a7ebb;
+}
+
+.links-list a {
+    overflow-wrap: break-word;
+}
+
+.photo {
+    display: block;
+    border: 1px solid #d5dbe3;
+}
+
+/* ---------- Таблица ---------- */
+
+#data-table {
+    font-size: 14px;
+}
+
+#data-table .merged-cell {
+    --bs-table-bg-type: #dbe4f0;
+}
+
+/* ---------- Форма ---------- */
+
+.form-note {
+    color: #6b7684;
+}
+
+.required-mark {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.field-group {
+    border: 1px solid #b7c3d2;
+}
+
+.field:focus {
+    border-color: #4a7ebb;
+    box-shadow: 0 0 0 0.2rem #b9d0ec;
+}
+
+.field:user-invalid {
+    border-color: #c0392b;
+    background-color: #fdf2f1;
+}
+
+.field:user-valid {
+    border-color: #2e8b57;
+}
+
+.submit-button {
+    background-color: #4a7ebb;
+    border-color: #4a7ebb;
+}
+
+.submit-button:hover {
+    background-color: #35608f;
+    border-color: #35608f;
+}
+
+/* ---------- Подвал ---------- */
+
+#page-footer {
+    color: #ffffff;
+    background-color: #35608f;
+}
+
+/* ---------- Планшет и десктоп ---------- */
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 960px;
+    }
+
+    #logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    #site-name {
+        font-size: 32px;
+    }
+
+    .block h2 {
+        font-size: 22px;
+    }
+
+    #data-table {
+        font-size: 16px;
+    }
+}
