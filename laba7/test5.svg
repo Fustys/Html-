@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150">
+  <rect x="10" y="10" width="130" height="120" fill="#cfe8ff" stroke="#0b5fa5" stroke-width="2"/>
+  <text x="75" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#0b5fa5">Прямоугольник</text>
+  <circle cx="220" cy="70" r="60" fill="#d6f5d6" stroke="#2e8b2e" stroke-width="2"/>
+  <text x="220" y="75" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#2e8b2e">Круг</text>
+</svg>
